@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.outer-wrapper{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  background: salmon;
+}
+.wrapper {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.outer{
+  width: 450px;
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+}
+.container{
+  display: flex;
+  position: absolute;
+  left: 0px;
+  transition: 0.5s;
+  scroll-behavior: smooth;
+  gap: 10px;
+}
+.slide {
+  min-width: 450px;
+  height: 230px;
+  background: #000;
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+  z-index: 90;
+}
+.cols {
+  position: relative;
+  top: 50%;
+}
+.cols .te-data {
+  width: 260px;
+  height: 150px;
+  position: absolute;
+  top: -50%;
+  background-color: rgb(17, 19, 41);
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px;
+  transform: translateY(-50%);
+  text-align: left;
+}
+.te-data p{
+  font-size: 10px;
+}
+.te-data h4{
+  text-align: center;
+  margin-top: 10px;
+}
+.cols img {
+  width: 180px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: -50%;
+  right: 0;
+  z-index: 1;
+}
+#left, #right{
+  height: 50px;
+  width: 20px;
+  font-size: 30px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+.circles{
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 50px;
+}
+.circles div{
+  height: 10px;
+  width: 10px;
+  background: #fff;
+  border-radius: 20px;
+  transition: .3s;
+  z-index: 100;
+  opacity: .5;
+  cursor: pointer;
+}

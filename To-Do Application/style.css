@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #001c40, #183153);
+}
+.todo-container {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background: blanchedalmond;
+  height: auto;
+  transition: all linear 0.5s;
+}
+header {
+  width: 70%;
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+}
+header img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  object-position: center;
+}
+.input-field {
+  max-width: 100%;
+  height: 30px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-field input {
+  width: 70%;
+  padding-left: 20px;
+}
+.input-field button {
+  width: 20%;
+  background: rgb(255, 60, 0);
+  color: #fff;
+  cursor: pointer;
+}
+.input-field input,
+button {
+  height: 100%;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+}
+.list-container {
+  width: 100%;
+  margin-top: 30px;
+  transition: all linear 0.5s;
+}
+ul li {
+  list-style: none;
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+p {
+  padding: 12px 8px 12px 50px;
+  cursor: default;
+  outline: none;
+}
+ul li p::before {
+  content: "";
+  background-image: url(images/unchecked.png);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-position: center;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}
+ul li p.checked {
+  text-decoration: line-through;
+}
+ul li p.checked::before {
+  background-image: url(images/checked.png);
+  background-size: cover;
+  background-position: center;
+}
+.fa-pen-to-square,
+.fa-check {
+  position: absolute;
+  right: 60px;
+}
+.fa-trash {
+  position: absolute;
+  right: 30px;
+}

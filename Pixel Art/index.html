@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="controls">
+        <div class="controls-container">
+          <div class="ranges">
+            <div class="range-input">
+              <label for="height-range">Height: </label>
+              <input
+                type="range"
+                id="height-range"
+                max="40"
+              />
+              <span id="height-label">00</span>
+            </div>
+            <div class="range-input">
+              <label for="width-range">Width: </label>
+              <input
+                type="range"
+                id="width-range"
+                max="40"
+              />
+              <span id="width-label">00</span>
+            </div>
+          </div>
+          <div class="buttons">
+            <button id="create">Create</button>
+            <button id="clear">Clear</button>
+            <input type="color" />
+            <button id="paint">Paint</button>
+            <button id="erase">Erase</button>
+          </div>
+        </div>
+      </div>
+      <div class="draw-area">
+        <div class="pixels-container"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
